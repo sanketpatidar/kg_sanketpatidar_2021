@@ -17,7 +17,10 @@ def charmapp(s1, s2):
 
 
 if __name__ == '__main__':
-    Input = sys.argv
-    s1 = Input[1]
-    s2 = Input[2]
-    print(charmapp(s1, s2))
+    try:
+        Input = sys.argv
+        s1 = Input[1]
+        s2 = Input[2]
+        print(charmapp(s1, s2))
+    except:
+        print("Please enter a valid input")
