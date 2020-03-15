@@ -1,3 +1,6 @@
+import sys
+
+
 def charmapp(s1, s2):
     mydict = {}
     flag = True
@@ -13,6 +16,7 @@ def charmapp(s1, s2):
 
 
 if __name__ == '__main__':
-    s1 = str(input())
-    s2 = str(input())
+    Input = sys.argv
+    s1 = Input[1]
+    s2 = Input[2]
     print(charmapp(s1, s2))
